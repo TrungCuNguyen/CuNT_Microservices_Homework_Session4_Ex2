@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.discoveryserver.DiscoveryServerApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T15:12:13.888Z" hostname="DESKTOP-M4L6TBH" time="11.733">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.discoveryserver.DiscoveryServerApplicationTests" time="1.651"/>
+  <system-out><![CDATA[22:12:14.154 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.discoveryserver.DiscoveryServerApplicationTests]: DiscoveryServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:12:14.312 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.discoveryserver.DiscoveryServerApplication for test class com.example.discoveryserver.DiscoveryServerApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2026-10-13T22:12:15.398+07:00  INFO 4928 --- [discovery-server] [    Test worker] c.e.d.DiscoveryServerApplicationTests    : Starting DiscoveryServerApplicationTests using Java 17.0.20.1 with PID 4928 (started by ADM in E:\Dev\JAVA\ex_ss4_micro\discovery-server)
+2026-10-13T22:12:15.408+07:00  INFO 4928 --- [discovery-server] [    Test worker] c.e.d.DiscoveryServerApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2026-10-13T22:12:17.919+07:00  INFO 4928 --- [discovery-server] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=30f97109-d55b-3304-a3f1-52b89efd328b
+2026-10-13T22:12:18.158+07:00  WARN 4928 --- [discovery-server] [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-10-13T22:12:18.165+07:00  WARN 4928 --- [discovery-server] [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-10-13T22:12:22.452+07:00  WARN 4928 --- [discovery-server] [    Test worker] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-13T22:12:23.049+07:00  INFO 4928 --- [discovery-server] [    Test worker] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-10-13T22:12:23.131+07:00  INFO 4928 --- [discovery-server] [    Test worker] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-10-13T22:12:23.138+07:00  INFO 4928 --- [discovery-server] [    Test worker] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-10-13T22:12:23.146+07:00  INFO 4928 --- [discovery-server] [    Test worker] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1791904343142 with initial instances count: 0
+2026-10-13T22:12:23.264+07:00  INFO 4928 --- [discovery-server] [    Test worker] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-10-13T22:12:23.272+07:00  WARN 4928 --- [discovery-server] [    Test worker] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2026-10-13T22:12:23.290+07:00  INFO 4928 --- [discovery-server] [    Test worker] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-10-13T22:12:23.290+07:00  INFO 4928 --- [discovery-server] [    Test worker] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-10-13T22:12:23.632+07:00  INFO 4928 --- [discovery-server] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-13T22:12:23.767+07:00  INFO 4928 --- [discovery-server] [    Test worker] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
+2026-10-13T22:12:23.791+07:00  INFO 4928 --- [discovery-server] [      Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-10-13T22:12:23.793+07:00  INFO 4928 --- [discovery-server] [      Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-10-13T22:12:23.793+07:00  INFO 4928 --- [discovery-server] [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-10-13T22:12:23.793+07:00  INFO 4928 --- [discovery-server] [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-10-13T22:12:23.794+07:00  INFO 4928 --- [discovery-server] [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-10-13T22:12:23.800+07:00  INFO 4928 --- [discovery-server] [      Thread-12] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-10-13T22:12:23.811+07:00  INFO 4928 --- [discovery-server] [    Test worker] c.e.d.DiscoveryServerApplicationTests    : Started DiscoveryServerApplicationTests in 9.155 seconds (process running for 12.209)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

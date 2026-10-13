@@ -1,0 +1,6 @@
+rootProject.name = 'ex_ss4_micro'
+
+include 'discovery-server'
+include 'customer-service'
+include 'product-service'
+include 'order-service'

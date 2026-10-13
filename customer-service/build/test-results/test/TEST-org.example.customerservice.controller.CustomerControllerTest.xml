@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.customerservice.controller.CustomerControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-13T15:21:28.169Z" hostname="DESKTOP-M4L6TBH" time="7.581">
+  <properties/>
+  <testcase name="testGetCustomerNotFound_Returns404AndApiResponseError()" classname="org.example.customerservice.controller.CustomerControllerTest" time="0.481"/>
+  <testcase name="testLoginFailed_Returns400AndApiResponseError()" classname="org.example.customerservice.controller.CustomerControllerTest" time="0.291"/>
+  <testcase name="testRegisterSuccess()" classname="org.example.customerservice.controller.CustomerControllerTest" time="0.078"/>
+  <system-out><![CDATA[22:21:28.540 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.example.customerservice.controller.CustomerControllerTest]: CustomerControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:21:28.806 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.example.customerservice.CustomerServiceApplication for test class org.example.customerservice.controller.CustomerControllerTest
+22:21:28.811 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.example.customerservice.controller.CustomerControllerTest]: CustomerControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:21:28.836 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.example.customerservice.CustomerServiceApplication for test class org.example.customerservice.controller.CustomerControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-10-13T22:21:30.402+07:00  INFO 8736 --- [customer-service] [    Test worker] o.e.c.controller.CustomerControllerTest  : Starting CustomerControllerTest using Java 17.0.20.1 with PID 8736 (started by ADM in E:\Dev\JAVA\ex_ss4_micro\customer-service)
+2026-10-13T22:21:30.405+07:00  INFO 8736 --- [customer-service] [    Test worker] o.e.c.controller.CustomerControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2026-10-13T22:21:34.749+07:00  INFO 8736 --- [customer-service] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-13T22:21:34.750+07:00  INFO 8736 --- [customer-service] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-13T22:21:34.756+07:00  INFO 8736 --- [customer-service] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2026-10-13T22:21:34.850+07:00  INFO 8736 --- [customer-service] [    Test worker] o.e.c.controller.CustomerControllerTest  : Started CustomerControllerTest in 5.389 seconds (process running for 8.812)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
